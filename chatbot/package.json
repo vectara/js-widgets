@@ -1,0 +1,37 @@
+{
+  "name": "vanilla-js-chatbot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "esbuild": "^0.20.0",
+    "typescript": "^4.9.5"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@vectara/react-chatbot": "^0.0.4"
+  }
+}
