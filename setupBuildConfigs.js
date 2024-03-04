@@ -1,6 +1,5 @@
 const {
   name: packageName,
-  version,
   devDependencies,
 } = require(`${process.cwd()}/package.json`);
 
@@ -13,7 +12,7 @@ const setupBuildConfigs = () => ({
   target: ["es6", "node12.22.0"],
 
   external: [...Object.keys(devDependencies)],
-  outfile: `../lib/${packageName}-${version}.js`,
+  outfile: `../lib/${packageName}.js`,
   format: "esm",
 });
 
