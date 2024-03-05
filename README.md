@@ -18,11 +18,13 @@ JS Widgets is a collection of Vectara-powered JavaScript widgets that are ready 
 
 ## Usage
 
-### React-Search
+### JS-Search
+
+JS-Search is an embeddable form of our [React-Search](https://github.com/vectara/react-search) component. Try that component's [demo](https://vectara.github.io/react-search/) to see how this widget will appear and behave on your site.
 
 Add this script tag to the `<head>` tag of your website:
 
-```
+```html
 <script src="https://cdn.jsdelivr.net/gh/vectara/js-widgets/lib/js-search.js">
 ```
 
@@ -40,11 +42,13 @@ Then, at the bottom of your website's `<body>` tag (or in your own JavaScript co
   });
 ```
 
-### React-Chatbot
+### JS-Chatbot
+
+JS-Chatbot is an embeddable form of our [React-Chatbot](https://github.com/vectara/react-chatbot) component. Try that component's [demo](https://vectara.github.io/react-chatbot/) to see how this widget will appear and behave on your site.
 
 Add this script tag to the `<head>` tag of your website:
 
-```
+```html
 <script src="https://cdn.jsdelivr.net/gh/vectara/js-widgets/lib/js-chatbot.js">
 ```
 
