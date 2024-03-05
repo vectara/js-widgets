@@ -3,27 +3,19 @@ import ReactDOM from "react-dom/client";
 import { ReactSearch } from "@vectara/react-search";
 import "./index.css";
 
-const renderSearch = (
-  wrapperId: string,
-  customerId: string,
-  corpusId: string,
-  apiKey: string,
-  placeholder?: string,
-  isDeepLinkable = false,
-  openResultsInNewTab = false
-) => {
+const renderSearch = (props: Props) => {
   const root = ReactDOM.createRoot(
-    document.getElementById(wrapperId) as HTMLElement
+    document.getElementById(props.wrapperId) as HTMLElement
   );
   root.render(
     <React.StrictMode>
       <ReactSearch
-        customerId={customerId}
-        corpusId={corpusId}
-        apiKey={apiKey}
-        placeholder={placeholder}
-        isDeeplinkable={isDeepLinkable}
-        openResultsInNewTab={openResultsInNewTab}
+        customerId={props.customerId}
+        corpusId={props.corpusId}
+        apiKey={props.apiKey}
+        placeholder={props.placeholder}
+        isDeeplinkable={props.isDeepLinkable}
+        openResultsInNewTab={props.openResultsInNewTab}
       />
     </React.StrictMode>
   );
@@ -34,3 +26,13 @@ const renderSearch = (
     renderSearch,
   };
 })();
+
+interface Props {
+  wrapperId: string;
+  customerId: string;
+  corpusId: string;
+  apiKey: string;
+  placeholder?: string;
+  isDeepLinkable?: boolean;
+  openResultsInNewTab?: boolean;
+}
