@@ -73,7 +73,7 @@ Then, at the bottom of your website's `<body>` tag (or in your own JavaScript co
   window.vectara.renderChatbot({
     wrapperId: "vectaraChatbotElement", // The ID assigned to the div you made earlier
     customerId: "CUSTOMER_ID",
-    corpusIds: ["CORPUS_ID_1", "CORPUS_ID_2"]
+    corpusIds: ["CORPUS_ID_1", "CORPUS_ID_2"],
     apiKey: "API_KEY",
     title: "My chatbot", // Optional title of your chatbot window
     placeholder: "Ask a question", // Optional chatbot window input placeholder
