@@ -60,11 +60,18 @@ Add this script tag to the `<head>` tag of your website:
 <script src="https://cdn.jsdelivr.net/gh/vectara/js-widgets/lib/js-chatbot.js"></script>
 ```
 
+Place a `div` in the body of your page with an ID assigned to it. The JS-Chatbot script will insert the chatbot widget into this element.
+
+```html
+<div id="vectaraChatbotElement"></div>
+```
+
 Then, at the bottom of your website's `<body>` tag (or in your own JavaScript code), add the following code:
 
 ```html
 <script>
   window.vectara.renderChatbot({
+    wrapperId: "vectaraChatbotElement", // The ID assigned to the div you made earlier
     customerId: "CUSTOMER_ID",
     corpusIds: ["CORPUS_ID_1", "CORPUS_ID_2"]
     apiKey: "API_KEY",
@@ -93,3 +100,5 @@ The widgets use the data in your Vectara corpora to provide responses. To set th
 ## License
 
 Vectara JS Widgets is an open-sourced software licensed under the [Apache 2.0 license](/LICENSE).
+
+_This repository contains sample code that can help you build UIs powered by Vectara, and is licensed under the Apache 2.0 License. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License._
