@@ -40,6 +40,7 @@ const HTMLElementToReactNodeAdapter = ({
 
 (() => {
   (window as any).vectara = {
+    ...((window as any).vectara || {}), // Avoid overwriting other vectara functions (if any)
     renderChatbot,
   };
 })();
