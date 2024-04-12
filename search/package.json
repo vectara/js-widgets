@@ -1,6 +1,6 @@
 {
   "name": "js-search",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "@vectara/react-search": "^0.0.10"
   },

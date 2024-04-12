@@ -4,7 +4,7 @@ import { ReactChatbot } from "@vectara/react-chatbot";
 
 const renderChatbot = (props: Props) => {
   const root = ReactDOM.createRoot(
-    document.getElementsByTagName("body")[0] as HTMLElement
+    document.getElementById(props.wrapperId) as HTMLElement
   );
 
   const convertedEmptyStateDisplay = props.emptyStateDisplay ? (
@@ -40,11 +40,13 @@ const HTMLElementToReactNodeAdapter = ({
 
 (() => {
   (window as any).vectara = {
+    ...((window as any).vectara || {}), // Avoid overwriting other vectara functions (if any)
     renderChatbot,
   };
 })();
 
 export interface Props {
+  wrapperId: string;
   customerId: string;
   apiKey: string;
   corpusIds: string[];

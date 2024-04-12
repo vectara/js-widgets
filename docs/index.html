@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="../lib/js-search.js"></script>
+    <script src="../lib/js-chatbot.js"></script>
+  </head>
+
+  <body>
+    <div id="search"></div>
+    <div id="chatbot"></div>
+
+    <script>
+      window.vectara.renderSearch({
+        wrapperId: "search",
+        customerId: "1366999410",
+        corpusId: "1",
+        apiKey: "zqt_UXrBcnI2UXINZkrv4g1tQPhzj02vfdtqYJIDiA",
+      });
+
+      window.vectara.renderChatbot({
+        wrapperId: "chatbot",
+        customerId: "1366999410",
+        corpusIds: ["1"],
+        apiKey: "zqt_UXrBcnI2UXINZkrv4g1tQPhzj02vfdtqYJIDiA",
+      });
+    </script>
+  </body>
+</html>
