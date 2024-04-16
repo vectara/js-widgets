@@ -32,6 +32,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vectara/react-chatbot": "^0.0.4"
+    "@vectara/react-chatbot": "^1.1.1"
   }
 }

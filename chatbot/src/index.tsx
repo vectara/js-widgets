@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect, useRef } from "react";
 import ReactDOM from "react-dom/client";
-import { ReactChatbot } from "@vectara/react-chatbot";
+import { ReactChatbot, SummaryLanguage } from "@vectara/react-chatbot";
 
 const renderChatbot = (props: Props) => {
   const root = ReactDOM.createRoot(
@@ -56,4 +56,6 @@ export interface Props {
   emptyStateDisplay?: HTMLElement;
   isInitiallyOpen?: boolean;
   zIndex?: number;
+  enableStreaming?: boolean;
+  language?: SummaryLanguage;
 }
