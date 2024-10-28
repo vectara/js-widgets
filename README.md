@@ -89,7 +89,7 @@ Then, at the bottom of your website's `<body>` tag (or in your own JavaScript co
 
 The widgets use the data in your Vectara corpora to provide responses. To set this up:
 
-1. [Create a free Vectara account](https://console.vectara.com/signup).
+1. [Create a Vectara account](https://console.vectara.com/signup).
 2. [Create a corpus and add data to it](https://docs.vectara.com/docs/console-ui/creating-a-corpus).
 3. [Create a **QueryService** API key](https://docs.vectara.com/docs/console-ui/manage-api-access#create-an-api-key).
 
